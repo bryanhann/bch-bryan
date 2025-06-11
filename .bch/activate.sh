@@ -8,8 +8,9 @@ export BCH_BRYAN__lbin=${r}/.bch/lbin
 export BCH_BRYAN__bin=${r}/.bch/bin
 export BCH_BRYAN__lib=${r}/.bch/lib
 
-bch:000:linkall ${r}/.bch/lbin
 
+source ${r}/.bch/init/fn.sh
 source ${r}/.bch/init/init.sh
+::lbin:: ${r}/.bch/lbin
 
 unset r
